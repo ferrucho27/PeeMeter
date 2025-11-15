@@ -1,0 +1,5 @@
+{
+  "name": "Registro de Micción",
+  "description": "Una aplicación simple para hacer clic en un botón y registrar las veces que orina. Diseñada para ayudar a los pacientes diabéticos a llevar un control para compartir con su médico.",
+  "requestFramePermissions": []
+}
