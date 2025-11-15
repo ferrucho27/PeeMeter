@@ -2,7 +2,8 @@
 import { useState, useEffect, Dispatch, SetStateAction } from 'react';
 
 // FIX: Import Dispatch and SetStateAction from react and use them to fix namespace errors.
-function useLocalStorage<T,>(key: string, initialValue: T): [T, Dispatch<SetStateAction<T>>] {
+// FIX: Removed trailing comma from generic type <T,> to <T> to fix TypeScript build error.
+function useLocalStorage<T>(key: string, initialValue: T): [T, Dispatch<SetStateAction<T>>] {
   const [storedValue, setStoredValue] = useState<T>(() => {
     if (typeof window === 'undefined') {
       return initialValue;

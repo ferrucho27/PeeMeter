@@ -1,4 +1,5 @@
 
+
 import React, { useState, useCallback, useMemo, useEffect } from 'react';
 import { LogEntry } from './types';
 import useLocalStorage from './hooks/useLocalStorage';
@@ -90,9 +91,9 @@ const LogChart: React.FC<LogChartProps> = ({ entries, period, onBarClick }) => {
             return true;
         });
         
-        // FIX: Explicitly type the accumulator in the `reduce` function to resolve type inference issues.
-        // FIX: Added a trailing comma to the generic type argument to disambiguate from JSX syntax, resolving the parsing error.
-        const countsByDay = filteredEntries.reduce<Record<string, { count: number; date: Date }>,>((acc, entry) => {
+        // FIX: Cast the initial value of the reduce function to ensure the accumulator `acc` has the correct type.
+        // This resolves issues where TypeScript fails to infer the type, leading to property access errors.
+        const countsByDay = filteredEntries.reduce((acc, entry) => {
             const date = new Date(entry.timestamp);
             date.setHours(0, 0, 0, 0);
             const dateString = date.toISOString().split('T')[0];
@@ -102,7 +103,7 @@ const LogChart: React.FC<LogChartProps> = ({ entries, period, onBarClick }) => {
             }
             acc[dateString].count++;
             return acc;
-        }, {});
+        }, {} as Record<string, { count: number; date: Date }>);
         
         return Object.entries(countsByDay)
             .map(([dateString, { count, date }]) => ({
