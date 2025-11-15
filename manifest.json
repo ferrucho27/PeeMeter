@@ -1,0 +1,21 @@
+{
+  "short_name": "Micción",
+  "name": "Registro de Micción",
+  "description": "Una aplicación simple para hacer clic en un botón y registrar las veces que orina. Diseñada para ayudar a los pacientes diabéticos a llevar un control para compartir con su médico.",
+  "icons": [
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkyIiBoZWlnaHQ9IjE5MiIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbD0iIzNCODJGNiIgZD0iTTI1NiA1MTJDMTYxLjQ0IDM4Mi43MiAxMTQuMTYgMjk4Ljg4IDExNC4xNiAyMjRDMTQwLjE2IDEzMi40OCAxNzguNjQgNjQgMjU2IDY0QzMzMy4zNiA2NCAzOTcuODQgMTMyLjQ4IDM5Ny44NCAyMjRD Mzk3Ljg0IDI5OC44OCAzNTAuNTYgMzgyLjcyIDI1NiA1MTJaIi8+PC9zdmc+",
+      "type": "image/svg+xml",
+      "sizes": "192x192"
+    },
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbD0iIzNCODJGNiIgZD0iTTI1NiA1MTJDMTYxLjQ0IDM4Mi43MiAxMTQuMTYgMjk4Ljg4IDExNC4xNiAyMjRDMTQwLjE2IDEzMi40OCAxNzguNjQgNjQgMjU2IDY0QzMzMy4zNiA2NCAzOTcuODQgMTMyLjQ4IDM5Ny44NCAyMjRD Mzk3Ljg0IDI5OC44OCAzNTAuNTYgMzgyLjcyIDI1NiA1MTJaIi8+PC9zdmc+",
+      "type": "image/svg+xml",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#ffffff",
+  "background_color": "#f3f4f6"
+}
